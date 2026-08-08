@@ -24,7 +24,7 @@ para descargar el modelo). No requiere cuentas, ni claves, ni suscripciones.
 
 La versión lista para usar (con todo incluido, no necesitas instalar nada más):
 
-1. **Descarga el paquete:** [Descargar Subtitulador IA (Windows)](PON-AQUI-TU-ENLACE-DE-DESCARGA)
+1. **Descarga el paquete:** [Descargar Subtitulador IA (Windows)](https://drive.google.com/uc?export=download&id=1vusWGEnYlYRtgbeYyYKmU9NZ-wckmkc9)
 2. Descomprime la carpeta en un lugar fijo de tu PC.
 3. Doble clic en **`Instalar.bat`**.
 4. Abre DaVinci Resolve → **Área de trabajo → Secuencias de comandos → Subtitulador_IA**.
