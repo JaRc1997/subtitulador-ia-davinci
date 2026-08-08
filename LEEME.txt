@@ -1,0 +1,65 @@
+============================================================
+  SUBTITULADOR IA para DaVinci Resolve  (gratis, offline)
+============================================================
+
+Genera subtitulos automaticos en espanol a partir del audio de
+tu video, usando inteligencia artificial que corre en TU PC
+(privado, sin internet salvo la primera vez, sin pagar nada).
+
+------------------------------------------------------------
+  COMO INSTALAR  (una sola vez)
+------------------------------------------------------------
+
+1. Descomprime esta carpeta en un lugar fijo de tu PC
+   (por ejemplo:  C:\Subtitulador IA )
+   -> NO la dejes dentro del ZIP.
+
+2. Haz doble clic en:   Instalar.bat
+
+   Si Windows muestra un aviso azul ("Windows protegio tu PC"):
+   haz clic en "Mas informacion" -> "Ejecutar de todas formas".
+   (Es normal: el aviso sale con cualquier programa nuevo.)
+
+3. Cuando diga "LISTO", ya esta instalado.
+
+IMPORTANTE: no muevas ni borres esta carpeta despues de instalar.
+
+------------------------------------------------------------
+  COMO USAR
+------------------------------------------------------------
+
+1. Abre DaVinci Resolve y abre tu proyecto con el video en el
+   timeline (ya editado si quieres).
+
+2. Menu:  Area de trabajo  ->  Secuencias de comandos  ->  Subtitulador_IA
+   (en ingles: Workspace -> Scripts -> Subtitulador_IA)
+
+3. La primera vez descarga el modelo de IA (~500 MB), tarda unos
+   minutos. Las siguientes veces es mucho mas rapido.
+
+4. Al terminar se abre una carpeta con el archivo .srt.
+   Arrastralo a la Zona de Medios (Media Pool) de Resolve y luego
+   al timeline: se crea la pista de subtitulos.
+
+5. Edita el texto (doble clic) y la tipografia/color/posicion
+   con el Inspector.
+
+------------------------------------------------------------
+  REQUISITOS
+------------------------------------------------------------
+- Windows 10 u 11 (64 bits)
+- DaVinci Resolve (version gratis o Studio)
+- ~1.5 GB de espacio libre
+- Internet solo la primera vez (para bajar el modelo de IA)
+
+------------------------------------------------------------
+  CONFIGURACION (opcional, para usuarios avanzados)
+------------------------------------------------------------
+El archivo de ajustes esta en:
+   %APPDATA%\SubtituladorIA\config.json
+
+- "modelo": tiny / base / small / medium / large-v3
+   (mas grande = mas preciso pero mas lento)
+- "idioma": "es", "en" o "auto"
+- "max_caracteres": maximo por linea de subtitulo
+============================================================

@@ -1,0 +1,19 @@
+# Entornos y binarios (no se versionan)
+python/
+venv/
+dist/
+build/
+
+# Salidas y temporales
+subtitulos/
+*.srt
+config.json
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Sistema
+Thumbs.db
+.DS_Store
