@@ -179,9 +179,11 @@ def main():
     print("[plugin] Fuente de audio: " + origen)
     print("[plugin] Archivo: " + audio)
 
-    # Carpeta de salida = dentro del plugin, nombre = timeline + fecha/hora
-    carpeta_plugin = os.path.dirname(cfg["worker"])
-    carpeta_srt = os.path.join(carpeta_plugin, "subtitulos")
+    # Carpeta de salida clara: Documentos\Subtitulos IA (o Desktop de respaldo)
+    docs = os.path.join(os.path.expanduser("~"), "Documents")
+    if not os.path.isdir(docs):
+        docs = os.path.join(os.path.expanduser("~"), "Desktop")
+    carpeta_srt = os.path.join(docs, "Subtitulos IA")
     os.makedirs(carpeta_srt, exist_ok=True)
     nombre_limpio = "".join(c if c.isalnum() or c in " -_" else "_"
                             for c in str(timeline.GetName())).strip()
@@ -208,6 +210,14 @@ def main():
     if not os.path.exists(ruta_srt):
         print("ERROR: El worker no genero el archivo SRT.")
         return
+
+    # Limpiar el audio temporal renderizado (NO el video original del usuario).
+    try:
+        if audio and os.path.dirname(audio) == temp and os.path.exists(audio):
+            os.remove(audio)
+            print("[plugin] Audio temporal eliminado.")
+    except Exception:
+        pass
 
     print("")
     print("[OK] Subtitulos guardados en:")
