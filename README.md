@@ -9,7 +9,7 @@ para descargar el modelo). No requiere cuentas, ni claves, ni suscripciones.
 
 ---
 
-## ✨ Características
+## Características
 
 - Detecta el audio del **timeline editado** y lo convierte a texto.
 - Genera un archivo de subtítulos `.srt` con tiempos sincronizados.
@@ -20,7 +20,7 @@ para descargar el modelo). No requiere cuentas, ni claves, ni suscripciones.
 
 ---
 
-## ⬇️ Instalación fácil (recomendada)
+## Instalación fácil (recomendada)
 
 La versión lista para usar (con todo incluido, no necesitas instalar nada más):
 
@@ -33,7 +33,7 @@ Guía detallada paso a paso: ver **`LEEME.txt`**.
 
 ---
 
-## 🛠️ Instalación desde el código (avanzado)
+## Instalación desde el código (avanzado)
 
 Si prefieres construirlo tú mismo con tu propio Python:
 
@@ -48,7 +48,7 @@ el plugin en la carpeta de scripts de DaVinci Resolve.
 
 ---
 
-## ⚙️ Configuración
+## Configuración
 
 Archivo: `%APPDATA%\SubtituladorIA\config.json`
 
@@ -60,7 +60,7 @@ Archivo: `%APPDATA%\SubtituladorIA\config.json`
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 | Archivo               | Descripción                                             |
 |-----------------------|---------------------------------------------------------|
@@ -72,6 +72,6 @@ Archivo: `%APPDATA%\SubtituladorIA\config.json`
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 MIT. Ver [LICENSE](LICENSE).
