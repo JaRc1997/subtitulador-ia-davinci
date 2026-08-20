@@ -78,9 +78,9 @@ Write-Host "  OK: $cfgDir\config.json" -ForegroundColor Green
 Write-Host "`n[5/5] Instalando el plugin dentro de DaVinci Resolve..." -ForegroundColor Yellow
 $scriptsDir = Join-Path $env:APPDATA "Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility"
 New-Item -ItemType Directory -Force -Path $scriptsDir | Out-Null
-Copy-Item (Join-Path $base "Subtitulador_IA.py") -Destination $scriptsDir -Force
+Copy-Item (Join-Path $base "Subtitulador Text+.py") -Destination $scriptsDir -Force
 Write-Host "  OK: copiado a $scriptsDir" -ForegroundColor Green
 
 Write-Host "`n== Instalacion completa ==" -ForegroundColor Cyan
 Write-Host "Abre DaVinci Resolve, abre un timeline y ve a:" -ForegroundColor White
-Write-Host "   Workspace -> Scripts -> Subtitulador_IA" -ForegroundColor Green
+Write-Host "   Workspace -> Scripts -> Subtitulador Text+" -ForegroundColor Green

@@ -31,8 +31,13 @@ IMPORTANTE: no muevas ni borres esta carpeta despues de instalar.
 1. Abre DaVinci Resolve y abre tu proyecto con el video en el
    timeline (ya editado si quieres).
 
-2. Menu:  Area de trabajo  ->  Secuencias de comandos  ->  Subtitulador_IA
-   (en ingles: Workspace -> Scripts -> Subtitulador_IA)
+2. Menu:  Area de trabajo  ->  Secuencias de comandos  ->  Subtitulador Text+
+   (en ingles: Workspace -> Scripts -> Subtitulador Text+)
+
+   Crea un objeto TEXT+ por cada frase: texto totalmente editable (fuente,
+   tamano, color, animacion) con las herramientas de DaVinci.
+   Recomendado: prueba primero en una COPIA del timeline
+   (clic derecho sobre el timeline -> Duplicar linea de tiempo).
 
 3. La primera vez descarga el modelo de IA (~500 MB), tarda unos
    minutos. Las siguientes veces es mucho mas rapido.

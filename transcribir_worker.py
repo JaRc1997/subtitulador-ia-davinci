@@ -95,12 +95,27 @@ def main():
     print(f"[worker] Idioma detectado: {info.language} "
           f"(probabilidad {info.language_probability:.2f})", flush=True)
 
+    import re
+
+    def _norm(t):
+        return re.sub(r"\s+", " ", t.lower()).strip(" .,!?¿¡…-")
+
     lineas_srt = []
     n = 0
+    saltados = 0
+    anterior = None   # frase inmediatamente anterior (para cortar bucles)
     for seg in segmentos:
         texto = seg.text.strip()
         if not texto:
             continue
+        norm = _norm(texto)
+        # Solo descarta si es IDENTICA a la de justo antes (bucle de Whisper).
+        if norm and norm == anterior:
+            saltados += 1
+            print(f"[worker] (descartada repeticion) {texto}", flush=True)
+            continue
+        anterior = norm
+
         n += 1
         lineas_srt.append(str(n))
         lineas_srt.append(f"{formato_tiempo(seg.start)} --> {formato_tiempo(seg.end)}")
@@ -111,7 +126,8 @@ def main():
     with open(args.output, "w", encoding="utf-8") as f:
         f.write("\n".join(lineas_srt))
 
-    print(f"[worker] Listo. {n} subtitulos escritos en: {args.output}", flush=True)
+    print(f"[worker] Listo. {n} subtitulos escritos ({saltados} repeticiones "
+          f"descartadas) en: {args.output}", flush=True)
 
 
 if __name__ == "__main__":
