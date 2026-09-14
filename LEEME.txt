@@ -1,4 +1,15 @@
 ============================================================
+  COMPATIBILIDAD (IMPORTANTE)
+------------------------------------------------------------
+  COMPATIBLE:     DaVinci Resolve 20 o anterior (version gratis)
+  COMPATIBLE:     DaVinci Resolve Studio (cualquier version)
+  NO COMPATIBLE:  DaVinci Resolve 21.1+ en su version GRATIS
+
+  Desde la 21.1, Blackmagic movio el scripting de Python solo
+  a la version Studio. En la version gratis 21.1+ este plugin
+  NO funciona. Usa Resolve 20 o anterior (version gratis).
+============================================================
+============================================================
   SUBTITULADOR IA para DaVinci Resolve  (gratis, offline)
 ============================================================
 

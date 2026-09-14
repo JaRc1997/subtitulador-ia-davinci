@@ -1,13 +1,26 @@
 # Subtitulador Text+ para DaVinci Resolve
 
 Genera subtitulos automaticos en espanol a partir del audio de tus videos y los
-crea como objetos **Text+** dentro de **DaVinci Resolve** (version gratis o
-Studio), para que puedas editar libremente fuente, tamano, color, contorno y
-animacion con las herramientas nativas.
+crea como objetos **Text+** dentro de **DaVinci Resolve**, para que puedas editar
+libremente fuente, tamano, color, contorno y animacion con las herramientas nativas.
 
 La transcripcion usa inteligencia artificial (**Whisper**) que corre **en tu
 propio PC**: es gratis, privado y funciona sin conexion (salvo la primera vez,
 para descargar el modelo). No requiere cuentas, ni claves, ni suscripciones.
+
+---
+
+## Compatibilidad (IMPORTANTE)
+
+- COMPATIBLE: DaVinci Resolve 20 o anterior (version gratis)
+- COMPATIBLE: DaVinci Resolve Studio (cualquier version, de pago)
+- NO COMPATIBLE: DaVinci Resolve 21.1 o superior en su version GRATIS
+
+A partir de la version **21.1**, Blackmagic movio el scripting de Python **solo
+a la version Studio**. Por eso este plugin (y cualquier script de Python) **ya no
+funciona en la version gratis 21.1+**. Si usas la version gratis, necesitas
+**Resolve 20 o anterior**. Puedes descargar versiones anteriores en el sitio de
+soporte de Blackmagic Design.
 
 ---
 
